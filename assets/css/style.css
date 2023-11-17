@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color:darkolivegreen;
+  background-color:#556538;
   min-height: 100vh;
 }
 
@@ -13,7 +13,7 @@ ul {
 }
 
 a {
-  color: #01110182;
+  color: #1f221f82;
 
 }
 
@@ -23,7 +23,6 @@ h2 {
 }
 
 .header {
-  border: solid 2px black;
   border-radius: 8px;
   background-color: #DDD0C8;
   margin: 1vw;
@@ -34,7 +33,7 @@ h2 {
 .header_h1 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: left;
-  color:#323232;
+  color:rgb(50, 75, 6);
 }
 .header_nav_ul {
   display:flex;
@@ -48,7 +47,7 @@ h2 {
 }
 
 .main {
-  /* min-height: 100%; */
+  min-height: 40px;
   margin: 1vw;
   padding: 5vw;
   display: flex;
@@ -56,37 +55,42 @@ h2 {
 }
 
 .main_img {
-  width: 40%;
-  height: auto;
+  width: 25%;
+  max-height: 40%;
   box-shadow: -10px 11px 10px 2px #01110182;
   border-radius: 45%;
+  image-rendering:optimizeQuality;
 }
 
 .Resources {
-  /*display: flex;*/
+  display: flex;
   list-style-type: none;
-  /*gap: 16px;*/
+  gap: 30px;
 }
 
-.project_1 ,.project_2{
-  border: solid 2px black;
-  float: right;
-
+.project_1 ,.project_2, .project_3, .project_4{
   width: 100%;
-  background-color: olivedrab;
+  box-shadow: -7px 8px 7px 0px #01110182;
+  border-radius: 8px;
+  background-color: #b1be9b;
+  padding: 3px;
 }
 
 .footer {
-  border: solid 2px black;
   border-radius: 8px;
-  background-color: #DDD0C8;
+  background-color: #839367;
   box-shadow: -7px 8px 7px 0px #01110182;
-  text-align: left;
-  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
 .contact {
-  
+  display:flex;
+  gap: 16px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -94,7 +98,11 @@ h2 {
    .header {
     flex-direction: column;
   }
-  
+
+  .Resources {
+    flex-direction: column;
+  }
+
   .main {
     order: 2;
   }
